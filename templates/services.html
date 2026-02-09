@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Services | Zavri Digital Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo brand">
+    <img
+      src="{{ url_for('static', filename='images/logo.png') }}"
+      alt="Zavri Digital Solutions Logo"
+      class="logo-img"
+    >
+    <div class="brand-text">
+      <span class="brand-name">Zavri Digital Solutions</span>
+      <small class="sub-logo">by Adj Technologies</small>
+    </div>
+  </div>
+
+
+  <!-- Mobile Menu Toggle -->
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <!-- Navigation Menu -->
+  <nav class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="career.html">Career</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+
+<section class="page-hero">
+  <h1>Our Services</h1>
+  <p>Data-driven solutions for smarter decisions</p>
+</section>
+
+<section class="features">
+  <div class="container">
+
+    <div class="feature-card" data-aos="fade-up">
+      <h3>Bulk SMS</h3>
+      <p>High-volume, reliable SMS solutions for customer engagement and alerts.</p>
+    </div>
+
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Digital Marketing</h3>
+      <p>SEO, social media, and performance marketing to grow your brand visibility.</p>
+    </div>
+
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Data Analytics</h3>
+      <p>Transform raw data into actionable insights using modern analytics tools.</p>
+    </div>
+
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+      <h3>Website Development</h3>
+      <p>Modern, responsive, and secure websites tailored to your business needs.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>© Zavri Digital Solutions</footer>
+<div class="cursor-glow"></div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

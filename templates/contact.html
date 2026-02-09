@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Zavri Digital Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo brand">
+    <img
+      src="{{ url_for('static', filename='images/logo.png') }}"
+      alt="Zavri Digital Solutions Logo"
+      class="logo-img"
+    >
+    <div class="brand-text">
+      <span class="brand-name">Zavri Digital Solutions</span>
+      <small class="sub-logo">by Adj Technologies</small>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Toggle -->
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <!-- Navigation Menu -->
+  <nav class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="career.html">Career</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <h1>Contact Us</h1>
+  <p>Tell us how we can help you with data-driven solutions</p>
+</section>
+
+<section class="contact-form-section">
+  <form
+    class="contact-form"
+    id="contactForm"
+    data-aos="fade-up"
+  >
+
+
+    <label>Your Name</label>
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter your name"
+      required
+    >
+
+    <label>Your Email</label>
+    <input
+      type="email"
+      name="email"
+      placeholder="Enter your email"
+      required
+    >
+
+    <label>Your Mobile Number</label>
+    <div class="phone-group">
+      <select name="country_code" required>
+        <option value="+91" selected>🇮🇳 +91 (India)</option>
+        <option value="+1">🇺🇸 +1 (USA)</option>
+        <option value="+44">🇬🇧 +44 (UK)</option>
+        <option value="+61">🇦🇺 +61 (Australia)</option>
+        <option value="+971">🇦🇪 +971 (UAE)</option>
+        <option value="+65">🇸🇬 +65 (Singapore)</option>
+      </select>
+
+      <input
+        type="tel"
+        name="mobile"
+        placeholder="Enter mobile number"
+        pattern="[0-9]{6,15}"
+        required
+      >
+    </div>
+
+
+    <label>What can we help you with?</label>
+    <select name="service" required>
+      <option>— Please choose an option —</option>
+      <option>Bulk SMS</option>
+      <option>Digital Marketing</option>
+      <option>Data Analytics</option>
+      <option>Website Development</option>
+      <option>Government Projects</option>
+      <option>Other</option>
+    </select>
+
+    <label>Subject</label>
+    <input
+      type="text"
+      name="subject"
+      placeholder="Subject"
+    >
+
+    <label>Your Message</label>
+    <textarea
+      name="message"
+      rows="5"
+      placeholder="Write your message here..."
+      required
+    ></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+
+    <div id="formSuccess" class="form-success">
+      ✅ Thank you! We will contact you shortly.
+    </div>
+
+
+  </form>
+</section>
+
+<footer>
+  © Zavri Digital Solutions | 📞 9843765167 | 📧 ZavriDigitalSolutions@gmail.com
+</footer>
+
+<div class="cursor-glow"></div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

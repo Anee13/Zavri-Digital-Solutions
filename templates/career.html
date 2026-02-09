@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Career | Zavri Digital Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo brand">
+    <img
+      src="{{ url_for('static', filename='images/logo.png') }}"
+      alt="Zavri Digital Solutions Logo"
+      class="logo-img"
+    >
+    <div class="brand-text">
+      <span class="brand-name">Zavri Digital Solutions</span>
+      <small class="sub-logo">by Adj Technologies</small>
+    </div>
+  </div>
+
+
+  <!-- Mobile Menu Toggle -->
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <!-- Navigation Menu -->
+  <nav class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="career.html">Career</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+
+<section class="page-hero">
+  <h1>Careers at Zavri Digital Solutions</h1>
+  <p>Explore opportunities to work with data & AI experts</p>
+</section>
+
+<section class="career-section" data-aos="fade-up">
+
+  <input
+    type="text"
+    class="job-search"
+    placeholder="Search jobs (e.g., Data Analyst, ML Engineer)"
+  >
+
+  <div class="no-jobs">
+    <h2>No current vacancies</h2>
+    <p>
+      We don’t have any open positions right now.<br>
+      Please check back later or contact us for future opportunities.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  Zavri Digital Solutions
+</footer>
+
+<div class="cursor-glow"></div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

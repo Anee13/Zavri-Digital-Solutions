@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zavri Digital Solutions</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header class="navbar">
+  <div class="logo brand">
+    <img
+      src="{{ url_for('static', filename='images/logo.png') }}"
+      alt="Zavri Digital Solutions Logo"
+      class="logo-img"
+    >
+    <div class="brand-text">
+      <span class="brand-name">Zavri Digital Solutions</span>
+      <small class="sub-logo">by Adj Technologies</small>
+    </div>
+  </div>
+
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <nav class="menu" id="menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="career.html">Career</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
+<!-- HERO (Slide 1) -->
+<section class="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Why Zavri Digital Solutions</h1>
+    <p>Data-Driven | Scalable | Government-Ready Digital Solutions</p>
+    <a href="services.html" class="btn">Explore Our Capabilities</a>
+  </div>
+</section>
+
+<!-- SLIDE 2: WHO WE ARE -->
+<section class="features">
+  <div class="container">
+    <div class="feature-card" data-aos="fade-up">
+      <h3>Who We Are</h3>
+      <p>
+        Zavri Digital Solutions is a technology and data analytics firm delivering
+        structured, insight-driven solutions to enterprises and government bodies.
+        We specialize in transforming raw data into actionable intelligence that
+        supports planning, monitoring, and decision-making.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 3: WHAT WE DO -->
+<section class="features">
+  <div class="container">
+
+    <div class="feature-card" data-aos="fade-right">
+      <h3>Data Analytics & Business Intelligence</h3>
+      <p>
+        Advanced data analysis, dashboards, and reports designed to support
+        evidence-based decisions and operational efficiency.
+      </p>
+    </div>
+
+    <div class="feature-card" data-aos="fade-up">
+      <h3>Digital & Communication Solutions</h3>
+      <p>
+        Bulk SMS systems, digital marketing, and online outreach platforms
+        to improve engagement, awareness, and communication.
+      </p>
+    </div>
+
+    <div class="feature-card" data-aos="fade-left">
+      <h3>Web & Platform Development</h3>
+      <p>
+        Secure, scalable, and responsive websites and systems aligned with
+        organizational and public-sector requirements.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SLIDE 4: GOVERNMENT EXPERIENCE -->
+<section class="features">
+  <div class="container">
+    <div class="feature-card" data-aos="zoom-in">
+      <h3>Government Project Experience</h3>
+      <p>
+        Zavri Digital Solutions is actively involved in data analytics projects
+        for the <strong>Coimbatore Corporation Commissioner</strong>, supporting
+        initiatives related to <strong>school data analysis</strong> and
+        <strong>solid waste management</strong>.
+      </p>
+      <p style="margin-top:10px;">
+        Our role includes data collection, cleansing, analysis, visualization,
+        and reporting to enable informed governance and operational planning.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDE 5: WHY CHOOSE US -->
+<section class="features">
+  <div class="container">
+
+    <div class="feature-card" data-aos="fade-up">
+      <h3>Why Choose Zavri Digital Solutions</h3>
+      <ul style="margin-top:15px; line-height:1.9; color:#cbd5f5;">
+        <li>Proven experience in government and public-sector analytics</li>
+        <li>Data-driven methodology aligned with policy and compliance needs</li>
+        <li>Clear, structured, and decision-ready reporting</li>
+        <li>Customized solutions based on departmental objectives</li>
+        <li>Use of modern analytics and visualization tools</li>
+        <li>Professional delivery with transparency and accountability</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- SLIDE 6: IMPACT -->
+<section class="stats">
+  <div class="stat" data-aos="fade-up">
+    <h2>5+</h2>
+    <p>Projects Delivered</p>
+  </div>
+
+  <div class="stat" data-aos="fade-up" data-aos-delay="100">
+    <h2>Govt</h2>
+    <p>Public Sector Engagements</p>
+  </div>
+
+  <div class="stat" data-aos="fade-up" data-aos-delay="200">
+    <h2>100%</h2>
+    <p>Commitment to Quality</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; Zavri Digital Solutions</p>
+</footer>
+
+<div class="cursor-glow"></div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -72,6 +72,11 @@ def career_page():
 def contact_page():
     return render_template("contact.html")
 
+@app.route("/academic_portal.html")
+def academic_portal():
+    return render_template("academic_portal.html")
+
+
 # ---------------- CONTACT FORM SUBMIT ----------------
 @app.route("/submit-contact", methods=["POST"])
 def submit_contact():
